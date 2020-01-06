@@ -1,0 +1,35 @@
+@media screen and (max-width: 600px){
+    .align-centre h1{font-size: 35px;}
+    .social-logos{float:none; margin: 12px auto;}
+    .head-contact{display: none;}
+    .navigation{height: 60px;}
+    .navigation img{display: block; height: 55px; margin: auto;}
+    nav{display: none;}
+    .slideshow-text-area{padding-top: 100px;}
+    .circle-table1 tr td{display: block; height: fit-content;margin-bottom: 20px; width: 100%;}
+    .circle{margin: auto;}.about-us{display: none;}.our-services table tr td{display: block; width: 100%; margin: 100px auto;}.our-process table{margin: 0 auto;}.our-process table tr td{display: block; width: 100%; margin: 10px auto;}.bordercircle{margin: 10px auto;}.fc-table tr td{display: block; width: 100%;}.skills-box table tr td{display: block; width: 100%; margin: 10px auto;}
+    .package-card:hover{
+        transform: scale(1);
+    }
+    }
+
+
+    @media only screen and (max-width: 826px){.fc-table tr td{display: block; width: 100%;}.tel-text{display: block;}
+    .footer .container{
+        flex-direction: column;
+        
+        
+    }
+    .footer .container > div {
+        margin: 20px auto;
+    }
+    }
+
+    @media only screen and (max-width: 1200px){
+    .request-input{display: block; margin: 15px auto;}
+    .our-portfolio{display: none;}
+    .card-container{flex-direction: column;}
+    .card-container > div {margin-bottom: 50px; width: 250px;}
+
+    }
+    
