@@ -3,26 +3,37 @@
     .social-logos{float:none; margin: 12px auto;}
     .head-contact{display: none;}
     .navigation{height: 60px;}
-    .navigation img{display: block; height: 55px; margin: auto;}
-    nav{display: none;}
+    .navigation > div > img{height: 50px;}
     .slideshow-text-area{padding-top: 100px;}
-    .circle-table1 tr td{display: block; height: fit-content;margin-bottom: 20px; width: 100%;}
-    .circle{margin: auto;}.about-us{display: none;}.our-services table tr td{display: block; width: 100%; margin: 100px auto;}.our-process table{margin: 0 auto;}.our-process table tr td{display: block; width: 100%; margin: 10px auto;}.bordercircle{margin: 10px auto;}.fc-table tr td{display: block; width: 100%;}.skills-box table tr td{display: block; width: 100%; margin: 10px auto;}
+    .circle{margin: auto;}
+    .about-us{display: none;}
+    .bordercircle{margin: 10px auto;}
+    .fc-table tr td{display: block; width: 100%;}
     .package-card:hover{
         transform: scale(1);
     }
     }
 
 
-    @media only screen and (max-width: 826px){.fc-table tr td{display: block; width: 100%;}.tel-text{display: block;}
-    .footer .container{
-        flex-direction: column;
+    @media only screen and (max-width: 826px){
+        .navigation{width: 100%;}
+        .navigation > div:nth-child(1){
+            width: fit-content;
+            margin: auto;
+        }
+
+        .navigation > div:nth-child(2) {display: none;}
         
-        
+        .fc-table tr td{display: block; width: 100%; border: hidden;}
+        .tel-text{display: block;}
+        .skills-box{margin-bottom: 20px;}
+        .footer .container{
+        flex-direction: column;  
     }
     .footer .container > div {
         margin: 20px auto;
     }
+
     }
 
     @media only screen and (max-width: 1200px){

@@ -23,9 +23,16 @@ body{width:100%;  box-sizing: border-box;}
 .green-button{padding:7px 15px; font-size: 12px; background-color: #A2D84C; border: none; border: 1px solid #A2D84C; box-shadow: 0px 2px 0px #4B641C;border-radius: 4px; margin:0px 35px 0px 30px; cursor: pointer; }
 
 /* Navigation (LOGO and nav bar)*/
-.navigation{ height:80px; box-sizing: border-box;overflow: hidden;}
+/* .navigation{ height:80px; box-sizing: border-box;overflow: hidden;}
 .navigation img{height: 70px; margin: 5px 30px;}
 nav{float: right; margin-right: 35px;}
+nav ul li{list-style-type: none; display: inline-block; line-height: 80px; }
+nav ul li a{color: black;font-size: 14px; padding: 30px 15px; transition: 0.5s;}
+nav ul li a:hover{color: black; border-bottom: 3px solid orange; background-color: #ffeaa7;} */
+
+.navigation{ height:80px; display: flex; justify-content: space-between; overflow: hidden;}
+.navigation img{height: 70px; margin: 5px 30px;}
+nav{margin-right: 35px;}
 nav ul li{list-style-type: none; display: inline-block; line-height: 80px; }
 nav ul li a{color: black;font-size: 14px; padding: 30px 15px; transition: 0.5s;}
 nav ul li a:hover{color: black; border-bottom: 3px solid orange; background-color: #ffeaa7;}
@@ -41,8 +48,8 @@ nav ul li a:hover{color: black; border-bottom: 3px solid orange; background-colo
 
 /* Our advantages container*/
 .our-advantages{min-height: 500px; width: 100%;padding-top: 35px;overflow: hidden; }
-
-.circle-table1{margin: 40px auto;}
+.advantages-circle-container{display: flex; justify-content: center; flex-wrap: wrap;}
+.advantages-circle-container > div{width: 200px; padding: 20px;}
 .circle{width: 170px; height: 170px; border-radius: 50%; background-color: #F1F2F2; position: relative; margin: 0 auto;}
 .circle1 img{position: absolute; bottom: 47px; right: 58px;}
 .circle2 img{position: absolute; bottom: 48px; right: 40px;}
@@ -58,10 +65,10 @@ nav ul li a:hover{color: black; border-bottom: 3px solid orange; background-colo
 .about-text{width: 40%; color: #484445;}
 
 /* Our services container*/
-.our-services{min-height: 480px; width: 100%; padding-top: 50px; box-sizing: border-box;overflow: hidden;}
-.service-container{width: 100%; height: fit-content;}
-.box{width: 280px; height: 220px; background-color: #F1F2F2; border-radius: 5px;margin: 60px 12px; position: relative; padding: 20px; box-sizing: border-box;}
 
+.our-services{min-height: 480px; width: 100%; padding-top: 50px; box-sizing: border-box;overflow: hidden;}
+.service-box-container{display: flex; justify-content: center; flex-wrap: wrap; margin-top: 30px;}
+.box{width: 280px; height: 220px; background-color: #F1F2F2; border-radius: 5px;margin: 40px 12px; position: relative; padding: 20px; box-sizing: border-box;}
 .innerstar{width: 75px; height: 75px; border-radius: 50%; background-color: #F8BD27; position: absolute; top:-40px; right: 100px;}
 .innerstar img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .box-text{ margin-top: 40px;}
@@ -82,14 +89,15 @@ nav ul li a:hover{color: black; border-bottom: 3px solid orange; background-colo
 
 /* Our process container*/
 .our-process{min-height: 480px; width: 100%; box-sizing: border-box; padding-top: 50px;overflow: hidden;}
-.circle-table2{margin: 50px auto 0 auto;}
-.circle-table2 td{width: 150px; height: 200px;}
-.bordercircle{height: 105px; width: 105px; border: 3px solid #D1D3D4; border-radius: 50%; position: relative; margin:0 22.5px 20px 22.5px; }
+.circle-container{display: flex; justify-content: space-around;flex-wrap: wrap; text-align: center; width: fit-content; margin: 30px auto ;}
+.circle-container > div {padding: 20px; width: 150px}
+.circle-container > div > div {margin: auto;}
+.bordercircle{height: 105px; width: 105px; border: 3px solid #D1D3D4; border-radius: 50%; position: relative;}
 .innercircle{width:25px; height: 25px; background-color: #F8BD27; border-radius: 50%; position: absolute; top: -12px; right: 39px;}
 .innercircle p{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)}
 .bordercircle img{width: 50px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
-.op-circleheading{text-align: center; color: #383838; margin-bottom: 20px;}
-.op-circletext{text-align: center; font-size: 12px; color: #B5B7B9;}
+.circle-container > div > div > p{color: #383838; margin: 15px 0 10px 0;}
+.op-circletext{font-size: 12px; color: #B5B7B9;}
 
 
 
@@ -106,9 +114,10 @@ nav ul li a:hover{color: black; border-bottom: 3px solid orange; background-colo
 
 
 /* Our skills container*/
+
 .our-skills{min-height: 550px; width: 100%; padding-top: 50px; box-sizing: border-box;overflow: hidden;}
-.skills-box{margin-top: 40px;}
-.skills-table{margin: 0 auto;}
+.skills-box{margin-top: 40px; display: flex; justify-content: space-around; width: fit-content; margin: auto;flex-wrap: wrap;}
+.skills-box > div {text-align: center;}
 .skills-table p{text-align: center;}
 .skills-outer1{width:170px; height: 170px; border:4px solid #F8BD27; border-radius: 50%; position: relative; margin: 30px;}
 .skills-outer1 h1{color: #F8BD27; font-size: 40px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
@@ -175,8 +184,6 @@ nav ul li a:hover{color: black; border-bottom: 3px solid orange; background-colo
     color: #8D9195;
 }
 
-
-
 .package-btn{
     position: absolute;
     bottom: -14px; left: 50%;
@@ -202,7 +209,7 @@ nav ul li a:hover{color: black; border-bottom: 3px solid orange; background-colo
 .request-form h2{font-size: 53px; text-align: center; color: white;}
 .submitform{width: fit-content; margin: 0 auto;}
 .request-input{font-size: 15px; padding: 16px 20px; width: 210px; color: black; border: none; border-radius: 6px; margin: 0 12px;}
-.request-form p{max-width: 765px; text-align: center; margin: 40px auto 0 auto; color: white;}
+.request-form p{max-width: 765px; text-align: center; margin: 40px auto 15px auto; color: white;}
 
 /* Contact us container*/
 .contact-us{min-height: 660px; width: 100%; position: relative; box-sizing: border-box; overflow: hidden;padding-top: 60px; }
@@ -216,23 +223,6 @@ nav ul li a:hover{color: black; border-bottom: 3px solid orange; background-colo
 .iframe-map{width: 100%; height: 350px;box-sizing: border-box;}
 
 /* Footer container*/
-/* .footer{min-height: 400px; width: 100%; background-color: #668D18; padding-top:50px; box-sizing: border-box; overflow: hidden;}
-.footer table{margin: 0 auto; max-width: 1400px;}
-.footer table tr td{vertical-align: top; padding: 30px 30px;}
-.copyright img{height: 80px; width: 155px; margin-bottom: 25px;}
-.copyright p{margin-bottom: 30px; width: 250px; color: #DEDEDE;}
-.services h1{ margin-bottom: 20px; color: white;}
-.services ul li a {line-height: 30px; color: #DEDEDE;}
-.usefullinks h1{ margin-bottom: 20px; color: white;}
-.usefullinks ul li a{line-height: 30px; color: #DEDEDE;}
-.contacts h1{margin-bottom: 20px; color: white;}
-.contacts p{line-height: 27px; padding-left: 10px;}
-.contacts a{color: #DEDEDE}
-.footer a:hover{color:orange;}
-.contacts img{margin-right: 15px;}
-.social-logos-footer{padding-top: 50px;}
-.social-logos-footer img{margin: 0 10px;} */
-
 .footer{min-height: 400px; width: 100%; background-color: #668D18; padding-top:50px; box-sizing: border-box; overflow: hidden;}
 .copyright img{height: 80px; width: 155px; margin-bottom: 25px;}
 .copyright p{color: #DEDEDE;}
@@ -245,7 +235,7 @@ nav ul li a:hover{color: black; border-bottom: 3px solid orange; background-colo
 .contacts a{color: #DEDEDE}
 .footer a:hover{color:orange;}
 .contacts img{margin-right: 15px;}
-.social-logos-footer{padding-top: 50px;}
+.social-logos-footer{margin-top: 25px;}
 .social-logos-footer img{margin: 0 10px;}
 .footer .container > div{
     flex: 1;
