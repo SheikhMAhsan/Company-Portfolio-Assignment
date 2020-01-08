@@ -4,6 +4,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 body{width:100%;  box-sizing: border-box;}
 
 .container{width:90%; margin: 0 auto;}
@@ -23,16 +24,31 @@ body{width:100%;  box-sizing: border-box;}
 .green-button{padding:7px 15px; font-size: 12px; background-color: #A2D84C; border: none; border: 1px solid #A2D84C; box-shadow: 0px 2px 0px #4B641C;border-radius: 4px; margin:0px 35px 0px 30px; cursor: pointer; }
 
 /* Navigation (LOGO and nav bar)*/
-.navigation{ height:80px; display: flex; justify-content: space-between; overflow: hidden;}
+.navigation{ min-height:80px; display: flex; justify-content: space-between; overflow: hidden;}
 .navigation img{height: 70px; margin: 5px 30px;}
 nav{margin-right: 35px;}
 nav ul li{list-style-type: none; display: inline-block; line-height: 80px; }
 nav ul li a{color: black;font-size: 14px; padding: 30px 15px; transition: 0.5s;}
 nav ul li a:hover{color: black; border-bottom: 3px solid orange; background-color: #ffeaa7;}
+#hamburger{display: none;}
+/* For small devices  */
+#block-nav{
+    display: none;
+}
+.block-navigation ul li{
+    text-align: center;
+    line-height: 40px;
+  
+}
+.block-navigation ul li a{
+    color:black;
+    font-size: 16px;
+    transition: 0.5s;
+}
 
 
 /* Slide-show container*/
-.slideshow{ height: 530px; width:100%;background-image: url(./images/slider2.jpeg); background-repeat: no-repeat; background-size: cover;overflow: hidden;}
+.slideshow{ height: 530px; width:100%;background-image: url(../images/slider2.jpeg); background-repeat: no-repeat; background-size: cover;overflow: hidden;}
 .slideshow-text-area{text-align: center; max-width: 750px; height: 250px; margin: 0 auto; padding-top: 170px;}
 .slideshow h1{font-size: 55px; color: white; }
 .slideshow p{font-size:18px; color: white; margin-top: 50px;}
@@ -54,7 +70,7 @@ nav ul li a:hover{color: black; border-bottom: 3px solid orange; background-colo
 
 /* About us container*/
 .about-us{height: 500px; width: 100%;overflow: hidden; }
-.wrapper-about{ max-width: 100%; height: 100%;padding-top: 35px; box-sizing: border-box; background-image: url(./images/comp\ image.png); background-repeat: no-repeat; background-size: cover; background-position: center;}
+.wrapper-about{ max-width: 100%; height: 100%;padding-top: 35px; box-sizing: border-box; background-image: url(../images/comp\ image.png); background-repeat: no-repeat; background-size: cover; background-position: center;}
 .about-text{width: 40%; color: #484445;}
 
 /* Our services container*/

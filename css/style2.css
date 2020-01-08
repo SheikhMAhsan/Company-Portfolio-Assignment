@@ -1,0 +1,43 @@
+@media screen and (max-width: 600px){
+        .align-centre h1{font-size: 35px;}
+        .social-logos{float:none; margin: 12px auto;}
+        .head-contact{display: none;}
+        .slideshow-text-area{padding-top: 100px;}
+        .circle{margin: auto;}
+        .about-us{display: none;}
+        .bordercircle{margin: 10px auto;}
+        .fc-table tr td{display: block; width: 100%;}
+        .package-card:hover{
+            transform: scale(1);
+        }
+    }
+
+
+    @media only screen and (max-width: 826px){
+        .navigation{width: 100%; min-height: 50px;}
+        .navigation > div > img{height: 44px; margin-left: 15px;}
+        .navigation > div:nth-child(2) {display: none;}
+        #hamburger{display: block;}
+        .fc-table tr td{display: block; width: 100%; border: hidden;}
+        .tel-text{display: block;}
+        .skills-box{margin-bottom: 20px;}
+        .footer .container{
+        flex-direction: column;  
+    }
+        .footer .container > div {
+            margin: 20px auto;
+        }
+    }
+
+    @media only screen and (max-width: 1200px){
+        #block-nav{
+            display: none;
+        }
+        nav ul li a{color: black;font-size: 12px; padding: 15px 8px;}
+    .request-input{display: block; margin: 15px auto;}
+    .our-portfolio{display: none;}
+    .card-container{flex-direction: column;}
+    .card-container > div {margin-bottom: 50px; width: 250px;}
+
+    }
+    

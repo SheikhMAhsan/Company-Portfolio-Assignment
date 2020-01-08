@@ -1,3 +1,19 @@
+// Diplay Navigation menu on header by clicking on hamburger menu
+
+function displayNav(){
+    var nav = document.getElementById('block-nav');
+    if(nav.style.display === 'block'){
+        nav.style.display = 'none';
+        document.getElementById('hamburger').classList.remove('is-active');
+    }
+    else{
+        nav.style.display = 'block';
+        document.getElementById('hamburger').classList.add('is-active');
+    }
+}
+
+
+
 // Effect for first card 
 
         // function packagebtn1(){
